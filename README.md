@@ -1,31 +1,4 @@
-Running Instructions 
 
-Skip to content
-Search or jump to…
-Pull requests
-Issues
-Marketplace
-Explore
- 
-@michalpaw18 
-ArnabPushilal
-/
-MLT
-Private
-Code
-Issues
-Pull requests
-Actions
-Projects
-Security
-Insights
-MLT/Instructions.txt
-@michalpaw18
-michalpaw18 Update Instructions.txt
-Latest commit 7d23f72 17 minutes ago
- History
- 1 contributor
-96 lines (64 sloc)  4.72 KB
    
 Instructions for running the code:
 
