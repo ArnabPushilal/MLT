@@ -1,6 +1,4 @@
 
-   
-Instructions for running the code:
 
 
 -----------------------------------------------------------------------------------------
@@ -17,7 +15,7 @@ Instructions for running the code:
 Example:
 python cw2_main.py -m 'MTL-Segnet' -d 'cpu' -e '50' -b '10' -tr 'y' -ts 'n'
 
-following is the list of model type:
+## Model types:
 
 1. 'Segnet-1task-untrained' : Vanilla Segnet model which outputs the segmentaion mask, without any pre-trained weights
 
@@ -40,7 +38,6 @@ following is the list of model type:
 10. 'MTL-Attention-with-denoising': MTL Attention model with added self-supervised task of denoising, with pre-trained weights in encoder
 
 Please Note: Before running the 'MTL-Attention-with-colorization' model an additional colorisation script lab_loader.py has to be run. This script converts the RGB colour images to the LAB colour images. This file must be ran before the running of cw2_main.py and training/testing of a model.  
-
 
 
 --------------------------------------------------------------------------------------------------------------
