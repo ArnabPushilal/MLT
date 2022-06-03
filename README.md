@@ -2,19 +2,8 @@
    
 Instructions for running the code:
 
-- Note customisation of the execution of the program takes place in the terminal, instead of
-manually changing the main repository file. For this purpose, an ArgumentParser was utilised to
-have command line arguments during the running of the program in the terminal. The information in
-this document primarily focusses on the cw2_main.py file of the repository.
------------------------------------------------------------------------------------------
-Folder Structure:
 
-- The MTL folder structure consists of files: Instructions.txt, attention.py, cw2_main.py,
-data_loader_canny.py, denoising_loader.py, displaying.py, generate_noisy_data.py, lab_loader.py,
-load_data.py, losses.py, losses_denoising.py, metrics.py, model_utils.py, save_lab_images.py,
-test_model.py, train_canny.py, train_color.py, train_denoising.py, train_model.py and pt_networks
-subfolder. 
-The pt_networks subfolder contains the networks for used to create the trained models.
+-----------------------------------------------------------------------------------------
 
 The data subfolder is where the data is placed - 
 
