@@ -6,15 +6,15 @@ Instructions for running the code:
 -----------------------------------------------------------------------------------------
 
 
-Command line arguments:
-'-m'  : model type to experiment on (deafult is set to 'MTL-Attention')
-'-e'  : number of epochs (default 30)
-'-b'  : mini batch size (default 5)
-'-tr' : 'y' (yes) or 'n' (no) for training the model (default is 'n')
-'-ts' : 'y' (yes) or 'n' (no) for testing the model (default is 'y')
-'-d'  : 'cpu' or 'cuda' device to run the code on
+## Command line arguments:
+1. '-m'  : model type to experiment on (deafult is set to 'MTL-Attention')
+2. '-e'  : number of epochs (default 30)
+3. '-b'  : mini batch size (default 5)
+4. '-tr' : 'y' (yes) or 'n' (no) for training the model (default is 'n')
+5. '-ts' : 'y' (yes) or 'n' (no) for testing the model (default is 'y')
+7. '-d'  : 'cpu' or 'cuda' device to run the code on
 
-Examples for experimenting with other different models:
+Example:
 python cw2_main.py -m 'MTL-Segnet' -d 'cpu' -e '50' -b '10' -tr 'y' -ts 'n'
 
 following is the list of model type:
