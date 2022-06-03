@@ -5,13 +5,6 @@ Instructions for running the code:
 
 -----------------------------------------------------------------------------------------
 
-The data subfolder is where the data is placed - 
-
-the train data is in data\train
-the validation data is in data\val
-the hold out test data is in data\test
-----------------------------------------------------------------------------------------------
-Running the experiments:
 
 Command line arguments:
 '-m'  : model type to experiment on (deafult is set to 'MTL-Attention')
@@ -26,25 +19,25 @@ python cw2_main.py -m 'MTL-Segnet' -d 'cpu' -e '50' -b '10' -tr 'y' -ts 'n'
 
 following is the list of model type:
 
-'Segnet-1task-untrained' : Vanilla Segnet model which outputs the segmentaion mask, without any pre-trained weights
+1. 'Segnet-1task-untrained' : Vanilla Segnet model which outputs the segmentaion mask, without any pre-trained weights
 
-'MTL-Segnet-untrained' : Multi task learning Segnet model with Bouding Box Regression, Segmentation and Classification tasks, without any pre-trained weights
+2. 'MTL-Segnet-untrained' : Multi task learning Segnet model with Bouding Box Regression, Segmentation and Classification tasks, without any pre-trained weights
 
-'Segnet-1task': Vanilla Segnet model which outputs the segmentaion mask,with pre-trained weights in encoder
+3. 'Segnet-1task': Vanilla Segnet model which outputs the segmentaion mask,with pre-trained weights in encoder
 
-'MTL-Segnet': Multi task learning Segnet model with Bouding Box Regression, Segmentation and Classification tasks, with pre-trained weights in encoder
+4. 'MTL-Segnet': Multi task learning Segnet model with Bouding Box Regression, Segmentation and Classification tasks, with pre-trained weights in encoder
 
-'MTL-Attention' : Soft Attention masks applied to the MTL Segnet model, with pre-trained weights in encoder
+5. 'MTL-Attention' : Soft Attention masks applied to the MTL Segnet model, with pre-trained weights in encoder
 
-'MTL-Attention-without-classification': MTL Attention model with only Bounding Box Regression and Segmentaion, with pre-trained weights in encoder
+6. 'MTL-Attention-without-classification': MTL Attention model with only Bounding Box Regression and Segmentaion, with pre-trained weights in encoder
 
-'MTL-Attention-without-bbox': MTL Attention model with only Bounding Box Regression and Segmentaion, with pre-trained weights in encoder
+7. 'MTL-Attention-without-bbox': MTL Attention model with only Bounding Box Regression and Segmentaion, with pre-trained weights in encoder
 
-'MTL-Attention-with-colorization': MTL Attention model with added self-supervised task of colorization, with pre-trained weights in encoder
+8. 'MTL-Attention-with-colorization': MTL Attention model with added self-supervised task of colorization, with pre-trained weights in encoder
 
-'MTL-Attention-with-canny': MTL Attention model with added self-supervised task of canny edge detection, with pre-trained weights in encoder
+9. 'MTL-Attention-with-canny': MTL Attention model with added self-supervised task of canny edge detection, with pre-trained weights in encoder
 
-'MTL-Attention-with-denoising': MTL Attention model with added self-supervised task of denoising, with pre-trained weights in encoder
+10. 'MTL-Attention-with-denoising': MTL Attention model with added self-supervised task of denoising, with pre-trained weights in encoder
 
 Please Note: Before running the 'MTL-Attention-with-colorization' model an additional colorisation script lab_loader.py has to be run. This script converts the RGB colour images to the LAB colour images. This file must be ran before the running of cw2_main.py and training/testing of a model.  
 
