@@ -1,9 +1,5 @@
 
 
-
------------------------------------------------------------------------------------------
-
-
 ## Command line arguments:
 1. '-m'  : model type to experiment on (deafult is set to 'MTL-Attention')
 2. '-e'  : number of epochs (default 30)
